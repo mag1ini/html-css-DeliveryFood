@@ -30,6 +30,11 @@
     <property name="settings.editor.selected.configurable" value="liveEdit" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="M:\mag1ini\projects\html-css-DeliveryFood" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/html-css-DeliveryFood/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
@@ -48,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602155409746</updated>
-      <workItem from="1602155410890" duration="28798000" />
+      <workItem from="1602155410890" duration="29447000" />
     </task>
     <servers />
   </component>
