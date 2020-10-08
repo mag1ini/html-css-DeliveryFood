@@ -59,12 +59,12 @@
 
 .address-input {
     background-image: url(../img/house.svg);
-    width: 40%;
+    flex: 0.6;
 }
 
 .restaurant-input {
     background-image: url(../img/search.svg);
-    width: 300px;
+    flex: 0.45;
 }
 .promo {
     padding: 70px 68px;
@@ -72,7 +72,6 @@
     background: #FFF1B8 url(../img/promo.jpeg)  no-repeat top -100px right -200px / 1000px;
     border-radius: 10px;
     filter: drop-shadow(0px 7px 12px rgba(158, 158, 163, 0.1));
-
 }
 
 .promo-title {
@@ -103,6 +102,7 @@
 }
 
 .card {
+    flex-basis: 31%; /* WTF */
     margin-top: 30px;
     background: #FFFFFF;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
@@ -154,6 +154,12 @@
     vertical-align: middle;
 
 }
+.card-dish {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 50%;
+}
 .card-title {
     display: flex;
     align-items: center;
@@ -190,10 +196,16 @@
 }
 
 .footer-nav {
+    margin-left: 35px;
+    margin-right: auto;
     width: 400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #595959;
+    font-size: 18px;
+    line-height: 21px;
+    link: fsd;
 }
 
 .footer-nav-socials {
