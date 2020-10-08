@@ -5,6 +5,7 @@
 
 .body {
     font-family: 'Roboto', sans-serif;
+
 }
 .header {
   display: flex;
@@ -13,7 +14,9 @@
     margin-top: 20px;
 
 }
-
+.main {
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+}
 .button {
     border-color: #d9d9d9;
     padding: 8px 10px;
@@ -96,6 +99,7 @@
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-bottom: 50px;
 }
 
 .card {
@@ -171,4 +175,30 @@
     align-items: center;
     justify-content: space-around;
     padding-bottom: 46px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 40px;
+}
+
+.footer-nav {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-nav-socials {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
