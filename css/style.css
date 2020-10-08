@@ -3,10 +3,15 @@
     margin: auto;
 }
 
+.body {
+    font-family: 'Roboto', sans-serif;
+}
 .header {
   display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
+
 }
 
 .button {
@@ -20,7 +25,7 @@
 .button-primary {
     background: #1890ff;
     background-repeat: no-repeat;
-    background-position: left 5px top 7px;
+    background-position: left 5px top 8px;
     background-image: url(../img/user.svg);
     color: #fff;
     border: 1px solid #1890ff;
@@ -29,7 +34,7 @@
 .button-orders {
     background: #fff;
     background-repeat: no-repeat;
-    background-position: left 5px top 7px;
+    background-position: left 5px top 9px;
     background-image: url(../img/shopping-cart.svg);
     color: #595959;
 }
@@ -37,16 +42,133 @@
     padding-left: 15px;
 }
 
-.input-search {
+.input {
     padding: 8px;
     border-color:#d9d9d9;
     border: 1px solid #d9d9d9;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
     border-radius: 2px;
     line-height: 20px;
-    width: 35%;
-    background-image: url(../img/house.svg);
     background-repeat: no-repeat;
     background-position: left 7px top 9px;
     padding-left: 30px;
+}
+
+.address-input {
+    background-image: url(../img/house.svg);
+    width: 40%;
+}
+
+.restaurant-input {
+    background-image: url(../img/search.svg);
+    width: 300px;
+}
+.promo {
+    padding: 70px 68px;
+    margin-top: 40px;
+    background: #FFF1B8 url(../img/promo.jpeg)  no-repeat top -100px right -200px / 1000px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 7px 12px rgba(158, 158, 163, 0.1));
+
+}
+
+.promo-title {
+    color:  #302C34;
+    size: 39px;
+    line-height: 45px;
+}
+
+.promo-text {
+    color: #302C34;
+    ize: 24px;
+    line-height: 28px;
+}
+
+.restaurants {
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-top: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    overflow: hidden;
+}
+.card-image {
+    width: 384px;
+    height: 250px;
+    object-fit: cover;
+}
+.card-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.сard-restaurant-name {
+    color: #000;
+}
+.card-time-tag {
+    background: #262626;
+    color: #fff;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+.card-text{
+    color: #8c8c8c;
+    padding: 20px;
+}
+.card-body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-rating {
+    color: #ffc107;
+
+    font-weight: bold;
+}
+.card-price:before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #8c8c8c;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    vertical-align: middle;
+
+}
+.card-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.сard-restaurant-name {
+    color: #000;
+}
+.card-time-tag {
+    background: #262626;
+    color: #fff;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 46px;
 }
