@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/animate.css">
 
 
 </head>
@@ -21,7 +22,7 @@
             <button class="button button-primary">
                 <span class="button-text">Войти</span>
             </button>
-            <button class="button button-orders">
+            <button class="button button-orders" id="card-button">
                 <span class="button-text">Корзина</span>
             </button>
         </div>
@@ -45,9 +46,9 @@
                 </div>
                     <input class="input restaurant-input" placeholder="Поиск блюд"/>
             </section>
-            <div class="cards">
-                <div class="card">
-                    <img alt="restaurant-img" src="img/hinkalnya1.jpg" class="card-image">
+            <div class="cards" fadeInUp>
+                <div class="card fadeInUp">
+                    <img alt="restaurant-img" src="img/hinkali.png" class="card-image">
                     <div class="card-text">
                         <div class="card-title">
                             <h3 class="сard-restaurant-name">Хинкали стандарт</h3>
@@ -69,7 +70,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img alt="restaurant-img" src="img/hinkali2.jpg" class="card-image">
+                    <img alt="restaurant-img" src="img/hinkali.png" class="card-image">
                     <div class="card-text">
                         <div class="card-title">
                             <h3 class="сard-restaurant-name">Хинкали острые</h3>
@@ -91,7 +92,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img alt="restaurant-img" src="img/lulya.jpg" class="card-image">
+                    <img alt="restaurant-img" src="img/kebab.jpg" class="card-image">
                     <div class="card-text">
                         <div class="card-title">
                             <h3 class="сard-restaurant-name">Люля кебаб</h3>
@@ -113,6 +114,7 @@
                     </div>
                 </div>
                 <div class="card">
+
                     <img alt="restaurant-img" src="img/shaslik.jpg" class="card-image">
                     <div class="card-text">
                         <div class="card-title">
@@ -165,5 +167,64 @@
         </div>
     </footer>
 
+    <div class="modal" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 class="modal-title">Корзина</h3>
+                <button class="close" id="close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="food-row">
+                    <span class="food-name">Роль уголь стандарт</span>
+                    <strong class="food-price">250 руб</strong>
+                    <div class="food-counter">
+                        <button class="counter-button">-</button>
+                        <span class="counter">1</span>
+                        <button class="counter-button">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Роль уголь стандарт</span>
+                    <strong class="food-price">250 руб</strong>
+                    <div class="food-counter">
+                        <button class="counter-button">-</button>
+                        <span class="counter">1</span>
+                        <button class="counter-button">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Роль уголь стандарт</span>
+                    <strong class="food-price">250 руб</strong>
+                    <div class="food-counter">
+                        <button class="counter-button">-</button>
+                        <span class="counter">1</span>
+                        <button class="counter-button">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Роль уголь стандарт</span>
+                    <strong class="food-price">250 руб</strong>
+                    <div class="food-counter">
+                        <button class="counter-button">-</button>
+                        <span class="counter">1</span>
+                        <button class="counter-button">+</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <span class="price-tag">1200 руб</span>
+                <div class="footer-buttons">
+                    <button class="button button-primary">
+                        Оформить заказ
+                    </button>
+                    <button class="button">
+                        Отмена заказ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/main.js"></script>
 </body>
 </html>
